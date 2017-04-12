@@ -1,0 +1,157 @@
+@import "normalize";
+@import "animate.css";
+/*
+ * Fancy skip link
+ *
+ * Make it look a bit less "bare bones"
+ * Also includes focus suppression for the Chrome tabindex="-1" workaround
+ */
+
+#skippy {
+    display: block;
+    padding: 1em;
+    color: #fff;
+    background-color: #6f5499;
+    outline: 0;
+}
+
+#skippy .skiplink-text {
+    padding: .5em;
+    outline: 1px dotted;
+}
+
+#content:focus {
+    outline: none;
+}
+
+* {
+    -webkit-transition: all 0.35s linear;
+    -moz-transition: all 0.35s linear;
+    -ms-transition: all 0.35s linear;
+    transition: all 0.35s linear;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    position: relative; /* For scrollspy */
+    /*padding-top: 80px;*/
+    padding-bottom: 80px;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    /*font-family: "Microsoft YaHei", 宋体, Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-size: 15px;
+    line-height: 1.5;
+    color: #444;
+    background: #fff;
+    font-weight: normal;
+}
+.wrapper {
+    background: #fff;
+}
+
+/*
+ * Main navigation
+ *
+ * Turn the `.navbar` at the top of the docs purple.
+ */
+
+.header {
+    background: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #bbb;
+    /*box-shadow: 1px 1px 8px rgba(0,0,0,.4);*/
+}
+
+.navbar {
+    border: 0;
+    margin-bottom: 0;
+    background: none;
+    opacity: .95;
+}
+.header .navbar-nav > li{
+
+}
+.header .navbar-brand,
+.header .navbar-nav > li > a {
+    color: #444;
+}
+
+.header .in .navbar-nav > li > a:hover,
+.header .in .navbar-nav > .active > a,
+.header .in .navbar-nav > .active > a:hover {
+    color: #39f;
+    background: #f9f9f9;
+}
+
+.header .navbar-nav > li > a:hover,
+.header .navbar-nav > .active > a,
+.header .navbar-nav > .active > a:hover {
+    color: #39f;
+    background: none;
+}
+
+.header .navbar-toggle .icon-bar {
+    background: #444;
+}
+.header .navbar-header .navbar-toggle {
+    border-color: #fff;
+}
+.header .navbar-header .navbar-toggle:hover,
+.header .navbar-header .navbar-toggle:focus {
+    background: #f9f9f9;
+    border-color: #f9f9f9;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #39f;
+    background: none;
+}
+
+.footer {
+    position: absolute;
+    bottom: -60px;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    min-height: 60px;
+    background: #eee;
+    border-top: solid 1px #ddd;
+    color: #666;
+    font-size: 12px;
+}
+
+.cut-off-divider{
+    position: relative;
+    margin: 80px 0;
+}
+
+.cut-off-divider:before{
+    content: '';
+    display: block;
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -40%;
+    height: 1px;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0,0,0,0.2) 0, rgba(255,255,255,0) 75%);
+}
+
+.jumbotron{
+    background: none;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.jumbotron p{
+    font-size:15px;
+}
+
+.panel-default {
+    padding: 30px 15px;
+}
