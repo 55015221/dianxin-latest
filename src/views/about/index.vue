@@ -1,28 +1,49 @@
 <template>
     <div class="template-wrapper">
 
-        <section style="background:url('/static/images/banner.png') no-repeat; background-size:cover;">
+        <div style="background: #3099E3 url('/static/images/首页_02.png');margin: 0;">
+            <div class="" style="width:1500px; margin:0 auto;">
+                <img class="first-slide" src="/static/images/解决方案_02.png" alt="First slide">
+            </div>
+            <!--
             <div class="jumbotron wow zoomIn">
                 <div class="container text-center">
                     <h2>关于我们</h2>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
+                </div>
+            </div>
+            -->
+        </div>
+
+        <!--content-->
+        <section class="content">
+            <div class="container">
+                <div class="page-title">
+                        <span style="color: #3099E3;">典信</span>简介
+                </div>
+                <div v-for="(item, index) in records.content"  style="margin-top: 30px;">
+                    <h2>公司成立</h2>
+                    <p>{{ item }}</p>
                 </div>
             </div>
         </section>
-
-        <!--content-->
-        <section>
-            <div class="container content">
-                <div class="panel panel-default">
-                    <div class="panel-body">
+        <section class="content">
+            <div class="container">
+                <div class="page-title">
+                        <span style="color: #3099E3;">典信</span>荣誉
+                </div>
+                <div class="row">
+                    <div class="col-sm-6" style="margin-top:30px;">
+                        <h2>Successful <span style="color: #3099E3;">cases</span><br/>企业荣誉<span class="glyphicon glyphicon-arrow-right"></span></h2>
                         <p v-for="(item, index) in records.content">
                             {{ item }}
                         </p>
                     </div>
+                    <div class="col-sm-6">
+                        <img src="/static/images/关于我们_03.png"/>
+                    </div>
                 </div>
             </div>
         </section>
-
     </div>
 </template>
 
@@ -60,11 +81,25 @@ export default {
 </script>
 
 <style scoped>
-
-.content p {
-    text-indent: 24px;
-    line-height: 1.8;
+section {margin-top:80px;}
+.page-title {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    margin: 20px auto;
+}
+.content h2 {
+    font-size:20px;
+    font-weight: bold;
     margin-bottom: 15px;
 }
+.glyphicon{
+    transform:rotate(45deg);
+    margin-left: 5px;
+}
+.glyphicon-arrow-right:before {
+     content: "个";
+}
+
 
 </style>

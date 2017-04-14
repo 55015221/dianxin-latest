@@ -36,7 +36,7 @@ const actions = {
     /**
      * 获取导航菜单
      */
-        getMenuList({ commit }, payload) {
+    getMenuList({ commit }, payload) {
         commit(types.GET_MENU_LIST_PENDING)
 
         //开始ajax请求
@@ -46,6 +46,25 @@ const actions = {
                 commit(types.GET_MENU_LIST_SUCCESS, response.body.data.menuList)
             } else {
                 commit(types.GET_MENU_LIST_FAILURE)
+            }
+        }, (response) => {
+            // 响应错误回调
+            console.log("http error", response)
+        });
+    },
+    /**
+     * 获取首页数据
+     */
+    getHome({ commit }, payload) {
+        commit(types.GET_CONTACT_PENDING)
+
+        //开始ajax请求
+        Vue.http.get('/api/static/mock/data.json?method=' + payload.method, payload).then((response) => {
+            // 响应成功回调
+            if (response.status === 200 && response.body.code === 1000) {
+                commit(types.GET_CONTACT_SUCCESS, response.body.data.home)
+            } else {
+                commit(types.GET_CONTACT_FAILURE)
             }
         }, (response) => {
             // 响应错误回调
@@ -73,7 +92,7 @@ const actions = {
     /**
      * 获取产品数据
      */
-        getProduct({ commit }, payload){
+    getProduct({ commit }, payload){
         commit(types.GET_CONTACT_PENDING)
         //开始ajax请求
         Vue.http.get('/static/mock/data.json?method=' + payload.method, payload).then((response) => {

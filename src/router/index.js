@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 
 //页面模块
-import Index from '@/views/index/'
+import Home from '@/views/home/'
 import About from '@/views/about/'
 // import Service from '@/views/service/'
 // import Product from '@/views/product/'
@@ -32,7 +32,7 @@ const router = new VueRouter({
   linkActiveClass: 'active',
   routes: [
     { path: '/', redirect: '/index' },   //默认页面
-    { path: '/index', name: 'index', component: Index },
+    { path: '/index', name: 'index', component: Home },
     { path: '/about', name: 'about', component: About },
     //{ path: '/service', name: 'service', component: Service },
     // { path: '/product', name: 'product', component: Product },
