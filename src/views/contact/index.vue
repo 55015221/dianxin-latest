@@ -1,18 +1,7 @@
 <template>
     <div class="template-wrapper">
 
-        <div style="background: #3099E3 url('/static/images/首页_02.png');margin: 0;">
-            <div class="" style="width:1500px; margin:0 auto;">
-                <img class="first-slide" src="/static/images/解决方案_02.png" alt="First slide">
-            </div>
-            <!--
-            <div class="jumbotron wow zoomIn">
-                <div class="container text-center">
-                    <h2>关于我们</h2>
-                </div>
-            </div>
-            -->
-        </div>
+        <Jumbotron/>
 
         <!--content-->
         <section class="content">
@@ -48,6 +37,7 @@
 <script>
 
 import { mapState } from 'vuex'
+import Jumbotron from '../../components/Jumbotron.vue'
 export default {
     name: 'contact',
     data () {
@@ -56,6 +46,7 @@ export default {
         }
     },
     components: {
+        Jumbotron: Jumbotron
     },
     computed: {
         ...mapState({

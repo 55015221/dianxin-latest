@@ -166,16 +166,14 @@ h4 {
     margin-top: 10px;
     font-weight: bold
 }
-section {
-    margin-bottom: 80px;
-}
+
 .row-items {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .row-items:after {
-        top: 60px;
+        top: 30px;
         position: relative;
         width: 100%;
         height: 1px;
@@ -183,8 +181,12 @@ section {
         content: " ";
         background: linear-gradient(90deg,hsla(0,0%,56%,0),#8e8e8e,hsla(0,0%,56%,0));
 }
-.row-items:last-child {
-    border-bottom: none;
+.products, .soulution, .deploymentway {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.row-items:last-child:after {
+    height: 0;
 }
 
 .row-items h3 {

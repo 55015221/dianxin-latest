@@ -26,7 +26,7 @@ Vue.http.options.headers = {
 Vue.http.options.emulateJSON = true
 
 const router = new VueRouter({
-  //mode: 'history',   //URL 不会带# 将会导致直接输入地址返回404
+  mode: 'history',   //URL 不会带# 将会导致直接输入地址返回404
   base: __dirname,
   //设置 链接激活时使用的 CSS 类名。默认值可以通过路由的构造选项 linkActiveClass 来全局配置。
   linkActiveClass: 'active',
@@ -45,7 +45,7 @@ const router = new VueRouter({
 // 页面跳转前的钩子函数
 // 注册路由切换前
 router.beforeEach((to, from, next) => {
-  console.log(to.path)
+  // console.log(to.path)
   document.body.scrollTop = 0
   document.documentElement.scrollTop = 0
   window.onscroll = null

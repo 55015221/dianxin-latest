@@ -1,18 +1,7 @@
 <template>
     <div class="template-wrapper">
 
-        <div style="background: #3099E3 url('/static/images/首页_02.png');margin: 0;">
-            <div class="" style="width:1500px; margin:0 auto;">
-                <img class="first-slide" src="/static/images/解决方案_02.png" alt="First slide">
-            </div>
-            <!--
-            <div class="jumbotron wow zoomIn">
-                <div class="container text-center">
-                    <h2>关于我们</h2>
-                </div>
-            </div>
-            -->
-        </div>
+        <Jumbotron/>
 
         <!--content-->
         <section class="content">
@@ -20,7 +9,7 @@
                 <div class="page-title">
                         <span style="color: #3099E3;">典信</span>简介
                 </div>
-                <div v-for="(item, index) in records.content"  style="margin-top: 30px;">
+                <div v-for="(item, index) in records.content">
                     <h2>公司成立</h2>
                     <p>{{ item }}</p>
                 </div>
@@ -39,7 +28,7 @@
                         </p>
                     </div>
                     <div class="col-sm-6">
-                        <img src="/static/images/关于我们_03.png"/>
+                        <img class="img-responsive" src="/static/images/关于我们_03.png"/>
                     </div>
                 </div>
             </div>
@@ -51,6 +40,7 @@
 <script>
 
 import { mapState } from 'vuex'
+import Jumbotron from '../../components/Jumbotron.vue'
 
 export default {
     name: 'about',
@@ -59,6 +49,7 @@ export default {
         }
     },
     components: {
+        Jumbotron: Jumbotron
     },
     computed: {
         ...mapState({
@@ -81,12 +72,11 @@ export default {
 </script>
 
 <style scoped>
-section {margin-top:80px;}
 .page-title {
+    margin-top: 30px;
     font-size: 32px;
     font-weight: 500;
     text-align: center;
-    margin: 20px auto;
 }
 .content h2 {
     font-size:20px;

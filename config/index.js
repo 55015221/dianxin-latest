@@ -29,8 +29,8 @@ module.exports = {
       assetsPublicPath: '/',
       proxyTable: {
           '/api': {
-              target: 'http://localhost:8080',
-              // target: 'http://tyteck.com',
+              // target: 'http://localhost:8080',
+              target: 'http://tyteck.com',
               changeOrigin: true, pathRewrite: {
                   '^/api': ''
               }
