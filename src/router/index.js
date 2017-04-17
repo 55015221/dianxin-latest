@@ -6,10 +6,10 @@ import VueResource from 'vue-resource'
 import Home from '@/views/home/'
 import About from '@/views/about/'
 // import Service from '@/views/service/'
-// import Product from '@/views/product/'
-// import Contact from '@/views/contact/'
-// import Questions from '@/views/questions/'
-// import Solution from '@/views/solution/'
+import Product from '@/views/product/'
+import Contact from '@/views/contact/'
+import Questions from '@/views/questions/'
+import Solution from '@/views/solution/'
 
 Vue.use(VueRouter)
 Vue.use(VueResource)
@@ -35,10 +35,10 @@ const router = new VueRouter({
     { path: '/index', name: 'index', component: Home },
     { path: '/about', name: 'about', component: About },
     //{ path: '/service', name: 'service', component: Service },
-    // { path: '/product', name: 'product', component: Product },
-    // { path: '/questions', name: 'questions', component: Questions },
-    //{ path: '/solution', name: 'solution', component: Solution },
-    // { path: '/contact', name: 'contact', component: Contact }
+    { path: '/product', name: 'product', component: Product },
+    { path: '/questions', name: 'questions', component: Questions },
+    { path: '/solution', name: 'solution', component: Solution },
+    { path: '/contact', name: 'contact', component: Contact }
   ]
 })
 

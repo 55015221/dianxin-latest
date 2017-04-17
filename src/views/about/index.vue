@@ -33,7 +33,7 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6" style="margin-top:30px;">
-                        <h2>Successful <span style="color: #3099E3;">cases</span><br/>企业荣誉<span class="glyphicon glyphicon-arrow-right"></span></h2>
+                        <h2>Successful <span style="color: #3099E3;">cases</span><br/>企业荣誉</h2>
                         <p v-for="(item, index) in records.content">
                             {{ item }}
                         </p>
@@ -92,13 +92,6 @@ section {margin-top:80px;}
     font-size:20px;
     font-weight: bold;
     margin-bottom: 15px;
-}
-.glyphicon{
-    transform:rotate(45deg);
-    margin-left: 5px;
-}
-.glyphicon-arrow-right:before {
-     content: "个";
 }
 
 
