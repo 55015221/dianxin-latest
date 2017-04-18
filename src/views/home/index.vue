@@ -32,27 +32,27 @@
                 </fieldset>
                 <div class="row wow fadeInUp">
                     <div class="col-sm-2 col-sm-offset-1">
-                        <img src="/static/images/首页_13_01.png" alt="Responsive across devices" class="">
+                        <img src="/static/images/home/01.png" data-src="/static/images/home/01.png" data-hover="/static/images/home/0101.png" alt="在线往来平台" class="">
                         <h4>在线往来平台</h4>
                         <p>你的网站和应用能在 Bootstrap 的帮助下通过同一份代码快速、有效适</p>
                     </div>
                     <div class="col-sm-2">
-                        <img src="/static/images/首页_13_03.png" alt="Responsive across devices" class="">
+                        <img src="/static/images/home/02.png" data-src="/static/images/home/02.png" data-hover="/static/images/home/0202.png"  alt="业务登记与交换服务" class="">
                         <h4>业务登记与交换服务</h4>
                         <p>你的网站和应用能在 Bootstrap 的帮助下通过同一份代码快速、有效适</p>
                     </div>
                     <div class="col-sm-2">
-                        <img src="/static/images/首页_13_05.png" alt="Responsive across devices" class="">
+                        <img src="/static/images/home/03.png" data-src="/static/images/home/03.png" data-hover="/static/images/home/0303.png"  alt="用户认证服务" class="">
                         <h4>用户认证服务</h4>
                         <p>你的网站和应用能在 Bootstrap 的帮助下通过同一份代码快速、有效适</p>
                     </div>
                     <div class="col-sm-2">
-                        <img src="/static/images/首页_13_07.png" alt="Responsive across devices" class="">
+                        <img src="/static/images/home/04.png" data-src="/static/images/home/04.png" data-hover="/static/images/home/0404.png"  alt="往来账款管理咨询" class="">
                         <h4>往来账款管理咨询</h4>
                         <p>你的网站和应用能在 Bootstrap 的帮助下通过同一份代码快速、有效适</p>
                     </div>
                     <div class="col-sm-2">
-                        <img src="/static/images/首页_13_09.png" alt="Responsive across devices" class="">
+                        <img src="/static/images/home/05.png" data-src="/static/images/home/05.png" data-hover="/static/images/home/0505.png"  alt="信用管理咨询" class="">
                         <h4>信用管理咨询</h4>
                         <p>你的网站和应用能在 Bootstrap 的帮助下通过同一份代码快速、有效适</p>
                     </div>
@@ -121,7 +121,7 @@
 import { mapState } from 'vuex'
 import Carousel from '../../components/Carousel.vue'
 export default {
-    name: 'index',
+    name: 'home',
     data () {
         return {
             colors: [
@@ -138,16 +138,22 @@ export default {
         })
     },
     created () {
-        console.log("created index")
+        console.log("created home")
         this.$store.dispatch('getHome',{ "method": "getHome" }).then((res) => {
 
         })
     },
     mounted () {
-        console.log("mounted index")
+        console.log("mounted home")
+        $(".products .col-sm-2").hover(function(){
+            let hover = $(this).find("img").data("hover")
+            $(this).find("img").attr("src", hover).css({"transform": "rotate3d(0,1,0,360deg)"})
+        },function(){
+            let src = $(this).find("img").data("src")
+            $(this).find("img").attr("src", src).css({"transform": "rotate3d(0,1,0,180deg)"})
+        })
     },
     methods:{
-
     }
 }
 </script>
@@ -168,12 +174,12 @@ h4 {
 }
 
 .row-items {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .row-items:after {
-        top: 30px;
+        top: 60px;
         position: relative;
         width: 100%;
         height: 1px;
@@ -197,8 +203,6 @@ h4 {
     margin-left:20px;
 }
 fieldset {
-    width: 50%;
-    margin: 0 auto;
     border-top: 1px solid #c0c0c0;
     text-align:center;
     font-weight: bold;
@@ -222,8 +226,11 @@ fieldset .lead {
 .products .col-sm-2 {
     text-align: center;
     font-size: 13px;
+    cursor: pointer;
 }
-
+.products .col-sm-2 img{
+    transition:all 0.6s ease-in-out;
+}
 
 .soulution .col-sm-6 {
     height: 200px;

@@ -9,10 +9,10 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img class="first-slide" src="/static/images/解决方案_02.png" alt="First slide">
+                    <img class="first-slide" src="/static/images/banner.png" alt="">
                 </div>
                 <div class="item">
-                    <img class="second-slide" src="/static/images/解决方案_02.png" alt="First slide">
+                    <img class="second-slide" src="/static/images/banner.png" alt="">
                 </div>
             </div>
         </div>

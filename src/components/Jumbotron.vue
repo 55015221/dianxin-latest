@@ -3,7 +3,7 @@
 <template>
     <!--jumbotron-->
     <div class="banner">
-        <img class="img-responsive" src="/static/images/解决方案_02.png" alt="First slide">
+        <img class="img-responsive" src="/static/images/banner.png" alt="">
     </div>
 </template>
 
