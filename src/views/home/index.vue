@@ -168,8 +168,8 @@ export default {
 
 }
 h4 {
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 12pt;
+    margin-bottom: 10px;
     font-weight: bold
 }
 
@@ -220,12 +220,10 @@ fieldset h2 {
 }
 fieldset .lead {
     color:#3099E3;
-    font-size: 15px;
     font-weight: 500;
 }
 .products .col-sm-2 {
     text-align: center;
-    font-size: 13px;
     cursor: pointer;
 }
 .products .col-sm-2 img{

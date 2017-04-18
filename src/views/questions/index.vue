@@ -6,13 +6,23 @@
         <!--content-->
         <section class="content">
             <div class="container">
-                   <h2>What is your problem?</h2>
-                   <ul class="list-unstyled">
-                        <li v-for="(item, index) in records">
-                            <div class="title">{{ item.title }}</div>
-                            <div class="body">{{ item.content }}</div>
-                        </li>
-                   </ul>
+                <h2>What is your problem?</h2>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                   <template v-for="(item, index) in records">
+                      <div class="panel">
+                          <div class="panel-heading" role="tab" v-bind:id="'headingOne-' + index">
+                            <h4 class="panel-title">
+                              <a role="button" data-toggle="collapse" data-parent="#accordion" v-bind:href="'#collapseOne-' + index" v-bind:aria-expanded="(index === 0)?true:false" v-bind:aria-controls="'collapseOne-' + index">
+                                {{ item.title }}
+                              </a>
+                            </h4>
+                          </div>
+                          <div v-bind:id="'collapseOne-' + index" v-bind:class="(index === 0)?'panel-collapse collapse in':'panel-collapse collapse'" role="tabpanel" v-bind:aria-labelledby="'headingOne-' + index">
+                            <div class="panel-body">{{ item.content }}</div>
+                          </div>
+                        </div>
+                  </template>
+                </div>
             </div>
         </section>
     </div>
@@ -28,6 +38,8 @@ export default {
     name: 'questions',
     data () {
         return {
+            open: false,
+            isOpened: false
         }
     },
     components: {
@@ -65,8 +77,12 @@ export default {
     margin: 10px 0;
 }
 .content li .title {
-    font-size: 15px;
+    font-size: 12pt;
     font-weight: 700;
     margin-bottom: 5px;
+    cursor: pointer;
+}
+ul, ol, dl{
+    font-size: inherit;
 }
 </style>

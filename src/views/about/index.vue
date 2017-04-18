@@ -7,12 +7,12 @@
         <section class="content">
             <div class="container">
                 <div class="page-title">
-                        <span style="color: #3099E3;">典信</span>简介
+                    <span style="color: #3099E3;">典信</span>简介
                 </div>
-                <div v-for="(item, index) in records.content">
+                <article v-for="(item, index) in records.content">
                     <h2>公司成立</h2>
                     <p>{{ item }}</p>
-                </div>
+                </article>
             </div>
         </section>
         <section class="content">
@@ -20,7 +20,7 @@
                 <div class="page-title">
                         <span style="color: #3099E3;">典信</span>荣誉
                 </div>
-                <div class="row">
+                <article class="row">
                     <div class="col-sm-6" style="margin-top:30px;">
                         <h2>Successful <span style="color: #3099E3;">cases</span><br/>企业荣誉</h2>
                         <p v-for="(item, index) in records.content">
@@ -30,7 +30,7 @@
                     <div class="col-sm-6">
                         <img class="img-responsive" src="/static/images/关于我们_03.png"/>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
     </div>
@@ -73,15 +73,17 @@ export default {
 
 <style scoped>
 .page-title {
-    margin-top: 30px;
-    font-size: 32px;
-    font-weight: 500;
+    padding: 20px 0;
+    font-size: 20pt;
+    font-weight: 700;
     text-align: center;
 }
+article {
+    margin-bottom: 10px;
+}
 .content h2 {
-    font-size:20px;
+    font-size:14pt;
     font-weight: bold;
-    margin-bottom: 15px;
 }
 
 

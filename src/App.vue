@@ -157,7 +157,8 @@ export default {
     padding-bottom: 30px;
 }
 .footer h4 {
-    font-weight:bold;
+    font-size: 15px;
+    font-weight:700;
 }
 .footer .col-sm-8 {
     border-right: 1px solid #ddd;
