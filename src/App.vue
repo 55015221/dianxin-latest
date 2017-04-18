@@ -80,7 +80,7 @@
                           </div>
 
                     </div>
-                    <div class="col-sm-4 col-xs-12">
+                    <div class="col-sm-3 col-sm-offset-1 col-xs-12">
                         <div class="qr">
                             <p><span class="glyphicon glyphicon-phone-alt"></span> 4007751007</p>
                             <p><span class="glyphicon glyphicon-map-marker"></span> 深圳市龙岗区大运软件小镇54栋306</p>
@@ -153,8 +153,8 @@ export default {
     text-align: left;
 }
 .footer .row {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .footer h4 {
     font-weight:bold;
@@ -164,12 +164,6 @@ export default {
 }
 .footer .col-sm-4 {
     border-left: 1px solid #fff;
-}
-.footer .qr {
-    margin-left: 40px;
-}
-.footer .qr img {
-    margin-left: 20px;
 }
 
 </style>

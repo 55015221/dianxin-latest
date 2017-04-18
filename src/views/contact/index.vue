@@ -8,21 +8,21 @@
             <div class="container">
                <h2>CONTACT US</h2>
                <div class="row">
-                    <div class="col-sm-6">
-                        <span class="glyphicon glyphicon-phone fa-1x" aria-hidden="true"></span>
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <span class="glyphicon glyphicon-phone-alt"></span>
                         电话：{{ records.telephone }}
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-sm-5 col-sm-offset-1">
                         <span class="glyphicon glyphicon-envelope fa-1x" aria-hidden="true"></span>
                         邮箱：<a :href="'mailto:'+ records.cooperateEmail">{{ records.cooperateEmail }}</a>
                     </div>
 
-                    <div class="col-sm-6">
+                    <div class="col-sm-5 col-sm-offset-1">
                         <span class="fa fa-qq fa-1x"></span>
                         客服：{{ records.qq }}
                     </div>
-                    <div class="col-sm-6">
-                        <span class="fa fa-qq fa-1x"></span>
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <span class="glyphicon glyphicon-map-marker"></span>
                         地址：{{ records.address }}
                     </div>
                </div>
@@ -135,12 +135,11 @@ export default {
 .content .row {
     margin-bottom: 30px;
 }
-.content .row .col-sm-6 {
-    text-indent: 40px;
+.content .row .col-sm-5 {
     font-size: 18px;
     padding: 10px 0;
 }
-.content .row .col-sm-6 span {
+.content .row .col-sm-5 span {
     color: #3099E3;
 }
 .contact-icon {
