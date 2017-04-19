@@ -160,7 +160,7 @@ export default {
     },
     mounted () {
         console.log("mounted home")
-        $(".products .col-sm-2").hover(function(){
+        $(".product .col-sm-2").hover(function(){
             let hover = $(this).find("img").data("hover")
             $(this).find("img").attr("src", hover).css({"transform": "rotate3d(0,1,0,360deg)"})
         },function(){
