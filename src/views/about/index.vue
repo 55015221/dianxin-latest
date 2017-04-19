@@ -4,33 +4,39 @@
         <Jumbotron/>
 
         <!--content-->
-        <section class="content">
+        <section class="introduce">
             <div class="container">
-                <div class="page-title">
-                    <span style="color: #3099E3;">典信</span>简介
+                <h2><span>典信</span>简介</h2>
+                <div class="panel" v-for="(item, index) in records.content">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">公司成立</h3>
+                    </div>
+                    <div class="panel-body">
+                        {{ item }}
+                    </div>
                 </div>
-                <article v-for="(item, index) in records.content">
-                    <h2>公司成立</h2>
-                    <p>{{ item }}</p>
-                </article>
             </div>
         </section>
-        <section class="content">
+
+        <section class="honor">
             <div class="container">
-                <div class="page-title">
-                        <span style="color: #3099E3;">典信</span>荣誉
-                </div>
-                <article class="row">
-                    <div class="col-sm-6" style="margin-top:30px;">
-                        <h2>Successful <span style="color: #3099E3;">cases</span><br/>企业荣誉</h2>
-                        <p v-for="(item, index) in records.content">
-                            {{ item }}
-                        </p>
+                <h2><span>典信</span>荣誉</h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Successful <span>cases</span></h3>
+                                <small>企业荣誉</small>
+                            </div>
+                            <div class="panel-body">
+                                {{ records.content[0] }}
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-6">
                         <img class="img-responsive" src="/static/images/关于我们_03.png"/>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
     </div>
@@ -72,19 +78,37 @@ export default {
 </script>
 
 <style scoped>
-.page-title {
-    padding: 20px 0;
-    font-size: 26px;
-    font-weight: 700;
-    text-align: center;
-}
-article {
-    margin-bottom: 10px;
-}
-.content h2 {
-    font-size: 18px;
-    font-weight: 600;
+
+section {
+    margin: 60px 0;
 }
 
+.honor h2,
+.introduce h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.honor h2 span,
+.honor .panel-title span,
+.introduce h2 span {
+    color: #3099E3;
+}
+.panel {
+    background-color: inherit;
+    border: none;border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.panel-heading .panel-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+.panel-heading small {
+    color: #3099E3;
+    font-size: 16px;
+}
+.panel-body {
+    padding: 0 15px;
+}
 
 </style>

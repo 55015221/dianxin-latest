@@ -5,17 +5,21 @@
 
         <!--content-->
         <section class="content">
-            <div class="row row-items" v-for="(item ,index) in records" :style="(index%2 === 1)?'background: #e6e6e6;':''">
+            <div class="row items" v-for="(item ,index) in records" :style="(index%2 === 1)?'background: #e6e6e6;':''">
                 <div class="container">
                     <div :class="(index%2 !== 1)?'col-sm-7 wow slideInLeft':'col-sm-7 col-sm-push-5 wow slideInRight'">
-                        <h3>{{ item.title }}</h3>
-                        <div class="details">
-                            <span class="lead">{{ item.lead }}</span>
-                            <p class="text-muted">{{ item.content }}</p>
+                        <div class="panel">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">{{ item.title }}</h3>
+                                <small>{{ item.lead }}</small>
+                            </div>
+                            <div class="panel-body">
+                                {{ item.content }}
+                            </div>
                         </div>
                     </div>
                     <div :class="(index%2 !== 1)?'col-sm-5 wow slideInRight':'col-sm-5 col-sm-pull-7 wow slideInLeft'">
-                        <img class="img-responsive center-block" data-src="/static/images/placeholder_400x250.svg" alt="400x250" :src="item.imageUrl" data-holder-rendered="true">
+                        <img class="img-responsive" data-src="/static/images/placeholder_400x250.svg" alt="400x250" :src="item.imageUrl" data-holder-rendered="true">
                     </div>
                 </div>
             </div>
@@ -59,18 +63,24 @@ export default {
 </script>
 
 <style scoped>
-.content .row {
+.content .items {
     padding: 80px 0;
 }
-.content h3 {
-    font-size: 36px;
+.panel {
+    background-color: inherit;
+    border: none;border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
-.content .lead {
-    font-size:18px;
+.panel-heading .panel-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+.panel-heading small {
     color: #3099E3;
-    font-weight: 700;
+    font-size: 16px;
 }
-.content .details p {
-    margin-top: 8px;
+.panel-body {
+    padding: 0 15px;
 }
 </style>
