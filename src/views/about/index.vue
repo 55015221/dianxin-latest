@@ -74,7 +74,7 @@ export default {
 <style scoped>
 .page-title {
     padding: 20px 0;
-    font-size: 20pt;
+    font-size: 26px;
     font-weight: 700;
     text-align: center;
 }
@@ -82,8 +82,8 @@ article {
     margin-bottom: 10px;
 }
 .content h2 {
-    font-size:14pt;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 

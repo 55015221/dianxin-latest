@@ -12,6 +12,7 @@
                       <div class="panel">
                           <div class="panel-heading" role="tab" v-bind:id="'headingOne-' + index">
                             <h4 class="panel-title">
+                              <span class="glyphicon glyphicon-plus"></span>
                               <a role="button" data-toggle="collapse" data-parent="#accordion" v-bind:href="'#collapseOne-' + index" v-bind:aria-expanded="(index === 0)?true:false" v-bind:aria-controls="'collapseOne-' + index">
                                 {{ item.title }}
                               </a>
@@ -73,16 +74,10 @@ export default {
     color: #3099E3;
     text-align: center;
 }
-.content li {
-    margin: 10px 0;
+.panel-group .panel+.panel {
+    margin-top: 0;
 }
-.content li .title {
-    font-size: 12pt;
-    font-weight: 700;
-    margin-bottom: 5px;
-    cursor: pointer;
-}
-ul, ol, dl{
-    font-size: inherit;
+.panel .panel-title span {
+    color: #3099E3;
 }
 </style>

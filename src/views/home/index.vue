@@ -10,8 +10,8 @@
                     <div :class="(index%2 === 1)?'col-sm-7 wow slideInLeft':'col-sm-7 col-sm-push-5 wow slideInRight'">
                         <h3>{{ item.title }}</h3>
                         <div class="details">
-                            <span class="lead">{{ item.lead }}</span>
-                            <p class="text-muted">{{ item.content }}</p>
+                            <p class="title">{{ item.lead }}</p>
+                            {{ item.content }}
                         </div>
                     </div>
                     <div :class="(index%2 === 1)?'col-sm-5 wow slideInRight':'col-sm-5 col-sm-pull-7 wow slideInLeft'">
@@ -159,18 +159,13 @@ export default {
 </script>
 
 <style scoped>
-.carousel, .listbox {
-    max-height: 450px;
-    overflow: hidden;
-}
-
 .content {
 
 }
 h4 {
-    font-size: 12pt;
-    margin-bottom: 10px;
-    font-weight: bold
+    font-size: 15px;
+    margin-bottom: 5px;
+    font-weight: 700;
 }
 
 .row-items {
@@ -196,11 +191,16 @@ h4 {
 }
 
 .row-items h3 {
-    color:#3099E3;
+    color: #3099E3;
     margin-top: 20px;
 }
 .details {
-    margin-left:20px;
+    margin-left: 16px;
+}
+.details .title {
+    color: #444;
+    font-size: 18px;
+    font-weight: 500;
 }
 fieldset {
     border-top: 1px solid #c0c0c0;
