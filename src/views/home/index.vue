@@ -128,6 +128,35 @@
                     </div>
                 </div>
             </section>
+
+            <!--CUSTOMER-->
+            <section class="customer">
+                <div class="container">
+                    <div class="row wow fadeInUp">
+                        <div class="col-sm-6">
+                            <img src="/static/images/customer/01.png" alt="Responsive across devices" class="">
+                        </div>
+                        <div class="col-sm-6">
+                            <fieldset style="margin-top: 30px;">
+                                <legend>
+                                    <h2>部署方式</h2>
+                                    <span class="lead">CLIENT</span>
+                                </legend>
+                            </fieldset>
+                            <div class="row">
+                                <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/aigo.jpg" alt="" class=""></div>
+                                <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/shopEx.jpg" alt="" class=""></div>
+                                <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/yijijing.jpg" alt="" class=""></div>
+                                <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/hezi.jpg" alt="" class=""></div>
+                                <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/qianxi.gif" alt="" class=""></div>
+                                <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/haixin.jpg" alt="" class=""></div>
+                                <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/bohe.jpg" alt="" class=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </div>
     </div>
 </template>
@@ -177,6 +206,12 @@ export default {
 .wrapper-content {
 
 }
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .panel {
     background-color: inherit;
     border: none;border-radius: 0;
@@ -195,24 +230,16 @@ export default {
     padding: 0 15px;
 }
 
-.product,
-.solution,
-.introduce,
-.deployment {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
 fieldset {
     border-top: 1px solid #c0c0c0;
     text-align:center;
     font-weight: bold;
     line-height: 0;
-    margin: 0 280px;
 }
 legend {
     width:auto;
     padding: 0 20px;
+    border: none;
 }
 
 fieldset h2 {
@@ -283,6 +310,14 @@ fieldset .lead {
 
 .deployment .col-sm-4 {
     text-align: center;
+}
+.customer .col-sm-3 {
+    height: 60px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow: hidden;
 }
 
 </style>

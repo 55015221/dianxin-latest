@@ -1,7 +1,7 @@
 <template>
     <footer class="footer">
-        <div class="container">
-            <div class="row hidden-xs">
+        <div class="container hidden-xs">
+            <div class="row">
                 <dl class="col-sm-2 site-link">
                     <dt>关于</dt>
                     <dd><a href="/about">关于我们</a></dd>
@@ -36,7 +36,7 @@
         </div>
         <div class="copyright">
             <div class="container">
-                Copyright © 2011-2017 典信科技有限公司. All Rights Reserved &nbsp;<br />
+                Copyright © 2017 典信科技有限公司. All Rights Reserved &nbsp;<br />
                 <a href="http://www.miibeian.gov.cn/" rel="nofollow">粤ICP备 15005796号-3</a> &nbsp;
             </div>
         </div>
@@ -71,6 +71,7 @@ export default {
 <style>
 
 .footer {
+    font-size: 12px;
     background: #e9e9e9;
 }
 .footer .container {

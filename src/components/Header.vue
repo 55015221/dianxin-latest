@@ -10,7 +10,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="/" class="navbar-brand"><img class="" src="/static/images/logo.jpg"/></a>
+                    <a href="/" title="深圳典信科技有限公司" class="navbar-brand"><img class="" alt="深圳典信科技有限公司" src="/static/images/logo.jpg"/></a>
                 </div>
                 <nav id="bs-navbar" class="navbar-collapse collapse" aria-expanded="true">
                     <ul class="nav navbar-nav navbar-right">
@@ -85,8 +85,7 @@ export default {
     margin-top: 20px;
 }
 .header .navbar-nav > li{
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 16px;
 }
 
 .header .navbar-nav > li > a {
