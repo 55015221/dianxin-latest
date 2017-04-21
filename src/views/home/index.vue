@@ -23,7 +23,7 @@
                             </div>
                             <div :class="(index%2 === 1)?'col-sm-5 wow slideInRight':'col-sm-5 col-sm-pull-7 wow slideInLeft'">
                                 <img class="img-responsive center-block"
-                                     data-src="/static/images/placeholder_400x250.svg" alt="400x250"
+                                     data-src="/static/images/placeholder_400x250.svg" alt=""
                                      :src="item.imageUrl" data-holder-rendered="true">
                             </div>
                         </div>
@@ -219,12 +219,13 @@ section {
     box-shadow: none;
 }
 .panel-heading .panel-title {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
 }
 .panel-heading small {
     color: #3099E3;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 600;
 }
 .panel-body {
     padding: 0 15px;

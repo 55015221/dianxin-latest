@@ -87,6 +87,7 @@ section {
 .introduce h2 {
     margin-bottom: 15px;
     text-align: center;
+    font-size: 38px;
 }
 .honor h2 span,
 .honor .panel-title span,
@@ -100,12 +101,13 @@ section {
     box-shadow: none;
 }
 .panel-heading .panel-title {
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 600;
 }
 .panel-heading small {
     color: #3099E3;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 600;
 }
 .panel-body {
     padding: 0 15px;

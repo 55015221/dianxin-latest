@@ -135,9 +135,9 @@ section {
 }
 
 .content h2 {
-    margin-top: 60px;
     margin-bottom: 30px;
     color: #3099E3;
+    font-size: 38px;
     text-align: center;
 }
 
