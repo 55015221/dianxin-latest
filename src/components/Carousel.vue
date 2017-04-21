@@ -1,6 +1,6 @@
 <template>
     <!--carousel-->
-    <section style="background: #3099E3 url('/static/images/首页_02.png');margin: 0;">
+    <div style="background: #3099E3;margin: 0;">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -16,7 +16,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </template>
 
 
@@ -46,14 +46,6 @@ export default {
 </script>
 
 <style scoped>
-.carousel, .listbox {
-    max-height: 450px;
-    overflow: hidden;
-}
 
-.content {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
 
 </style>
