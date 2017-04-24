@@ -3,7 +3,7 @@
 <template>
     <!--jumbotron-->
     <div class="banner">
-        <img class="img-responsive" src="/static/images/banner.png" alt="">
+        <img class="img-responsive" src="/static/images/banner_01.png" alt="">
     </div>
 </template>
 

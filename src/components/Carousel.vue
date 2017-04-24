@@ -4,16 +4,16 @@
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                <template v-for="(items, index) in banner">
+                    <li data-target="#myCarousel" v-bind:data-slide-to="index" v-bind:class="(index === 0 ? 'active' : '')"></li>
+                </template>
             </ol>
             <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img class="first-slide" src="/static/images/banner.png" alt="">
-                </div>
-                <div class="item">
-                    <img class="second-slide" src="/static/images/banner.png" alt="">
-                </div>
+                <template v-for="(items, index) in banner">
+                    <div v-bind:class="'item' + (index === 0 ? ' active' : '')">
+                        <img class="first-slide" v-bind:src="items.imageUrl" v-bind:alt="items.title">
+                    </div>
+                </template>
             </div>
         </div>
     </div>
@@ -25,7 +25,11 @@ export default {
     name: 'carousel',
     data () {
         return {
-
+            banner: [
+                { "imageUrl": "/static/images/banner_01.png", "title": "", linkUrl: "" },
+                { "imageUrl": "/static/images/banner_02.png", "title": "", linkUrl: "" },
+                { "imageUrl": "/static/images/banner_03.png", "title": "", linkUrl: "" },
+            ]
         }
     },
     components: {
