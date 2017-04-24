@@ -103,19 +103,20 @@ export default {
                 ];
             for(let index = 0; index < markers.length; index++ ){
                 let point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
-                let marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
-                  imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
-                })});
+                let marker = new BMap.Marker(point);
                 let label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
                 let opts = {
                       width: 200,
                       title: markers[index].title,
-                      enableMessage: false
+                      enableMessage: false,
                 };
+                label.setStyle()
                 let infoWindow = new BMap.InfoWindow(markers[index].content,opts);
-                marker.setLabel(label);
+                //marker.setLabel(label);
+                this.map.openInfoWindow(infoWindow,point); //开启信息窗口
                 this.addClickHandler(marker,infoWindow);
                 this.map.addOverlay(marker);
+                //marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
             };
         },
         addMapControl:function(){

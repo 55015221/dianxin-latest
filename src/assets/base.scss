@@ -23,6 +23,7 @@
     outline: 0;
 }
 
+
 * {
     -webkit-transition: all 0.35s linear;
     -moz-transition: all 0.35s linear;
@@ -62,8 +63,8 @@ body{
     font-family: "Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","WenQuanYi Micro Hei","Microsoft Yahei",sans-serif;
     font-size: 15px;
     line-height: 1.5;
-    color: #333;
-    background-color: #fff;
+    color: #424242;
+    background: #fff;
 }
 
 .wrapper {
@@ -85,7 +86,42 @@ body{
     position: absolute;
     bottom: 0;
     //background: linear-gradient(90deg,hsla(0,0%,56%,0),#8e8e8e,hsla(0,0%,56%,0));
-    background: -webkit-radial-gradient(center, ellipse, rgba(0,0,0,0.2) 0, rgba(255,255,255,0) 75%);
+    background: -webkit-radial-gradient(center, ellipse, rgba(0,0,0,0.3) 0, rgba(255,255,255,0) 95%);
+}
+
+//标题中线
+.row-title {
+    color: #333;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.row-title h2 {
+    font-size: 36px;
+    line-height: 1.5;
+}
+.row-title h2 > span {
+    font-size: 26px;
+}
+.row-title span {
+    display: block;     /*设置为块级元素会独占一行形成上下居中的效果*/
+    color: #3099E3;
+    position: relative;   /*定位横线（当横线的父元素）*/
+}
+.row-title span:before, .row-title span:after {
+    content: '';                 /*CSS伪类用法*/
+    position: absolute;         /*定位背景横线的位置*/
+    top: 0;
+    width: 25%;
+    height: 1px;
+}
+.row-title span:before{
+    background: -webkit-radial-gradient(right, ellipse, rgba(0,0,0,0.4) 0, rgba(255,255,255,0) 75%);       /*宽和高做出来的背景横线*/
+    left: 10%;        /*调整背景横线的左右距离*/
+}
+.row-title span:after {
+    background: -webkit-radial-gradient(left, ellipse, rgba(0,0,0,0.4) 0, rgba(255,255,255,0) 75%);       /*宽和高做出来的背景横线*/
+    right: 10%;
 }
 
 .jumbotron{
@@ -96,7 +132,5 @@ body{
 .jumbotron p{
     font-size:15px;
 }
+.BMap_stdMpCtrl { display: none;}
 
-fieldset {
-    border: none;
-}

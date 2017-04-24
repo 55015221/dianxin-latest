@@ -35,42 +35,39 @@
             <!--PRODUCT AND SERVICE-->
             <section class="product">
                 <div class="container">
-                    <fieldset class="wow fadeInUp">
-                        <legend>
-                            <h2>产品与服务</h2>
-                            <span class="lead">PRODUCT AND SERVICE</span>
-                        </legend>
-                    </fieldset>
+                    <div class="row-title wow fadeInUp">
+                        <h2>产品与服务<span>PRODUCT AND SERVICE</span></h2>
+                    </div>
                     <div class="row wow fadeInUp">
                         <div class="col-sm-2 col-sm-offset-1">
                             <img src="/static/images/home/01.png" data-src="/static/images/home/01.png"
                                  data-hover="/static/images/home/0101.png" alt="在线往来平台" class="">
                             <h4>在线往来平台</h4>
-                            <p>你的网站和应用能在 Bootstrap 的帮助下通过同一份代码快速、有效适</p>
+                            <p>你的网站和应用能在同一份代码快速、有效适</p>
                         </div>
                         <div class="col-sm-2">
                             <img src="/static/images/home/02.png" data-src="/static/images/home/02.png"
                                  data-hover="/static/images/home/0202.png" alt="业务登记与交换服务" class="">
                             <h4>业务登记与交换服务</h4>
-                            <p>你的网站和应用能在 Bootstrap 的帮助下通过同一份代码快速、有效适</p>
+                            <p>你的网站和应用能在同一份代码快速、有效适</p>
                         </div>
                         <div class="col-sm-2">
                             <img src="/static/images/home/03.png" data-src="/static/images/home/03.png"
                                  data-hover="/static/images/home/0303.png" alt="用户认证服务" class="">
                             <h4>用户认证服务</h4>
-                            <p>你的网站和应用能在 Bootstrap 的帮助下通过同一份代码快速、有效适</p>
+                            <p>你的网站和应用能在同一份代码快速、有效适</p>
                         </div>
                         <div class="col-sm-2">
                             <img src="/static/images/home/04.png" data-src="/static/images/home/04.png"
                                  data-hover="/static/images/home/0404.png" alt="往来账款管理咨询" class="">
                             <h4>往来账款管理咨询</h4>
-                            <p>你的网站和应用能在 Bootstrap 的帮助下通过同一份代码快速、有效适</p>
+                            <p>你的网站和应用能在同一份代码快速、有效适</p>
                         </div>
                         <div class="col-sm-2">
                             <img src="/static/images/home/05.png" data-src="/static/images/home/05.png"
                                  data-hover="/static/images/home/0505.png" alt="信用管理咨询" class="">
                             <h4>信用管理咨询</h4>
-                            <p>你的网站和应用能在 Bootstrap 的帮助下通过同一份代码快速、有效适</p>
+                            <p>你的网站和应用能在同一份代码快速、有效适</p>
                         </div>
 
                     </div>
@@ -80,23 +77,24 @@
             <!--SOLUTION-->
             <section class="solution">
                 <div class="container">
-                    <fieldset class="wow fadeInUp">
-                        <legend>
-                            <h2>解决方案</h2>
-                            <span class="lead">SOULUTION</span>
-                        </legend>
-                    </fieldset>
+                    <div class="row-title wow fadeInUp">
+                        <h2>解决方案<span>SOULUTION</span></h2>
+                    </div>
                     <div class="row wow fadeInUp">
                         <div class="col-sm-6">
+                            <span class="glyphicon glyphicon-link"></span>
                             供应链循环业务一体化
                         </div>
                         <div class="col-sm-6">
+                            <span class="glyphicon glyphicon-paperclip"></span>
                             销售业务一体化
                         </div>
                         <div class="col-sm-6">
+                            <span class="glyphicon glyphicon-erase"></span>
                             费用报销与额度控制
                         </div>
                         <div class="col-sm-6">
+                            <span class="glyphicon glyphicon-transfer"></span>
                             工资核算与发放
                         </div>
                     </div>
@@ -106,12 +104,9 @@
             <!--DEPLOYMENT-->
             <section class="deployment">
                 <div class="container">
-                    <fieldset class="wow fadeInUp">
-                        <legend>
-                            <h2>部署方式</h2>
-                            <span class="lead">DEPLOYMENT WAY</span>
-                        </legend>
-                    </fieldset>
+                    <div class="row-title wow fadeInUp">
+                            <h2>部署方式<span>DEPLOYMENT WAY</span></h2>
+                    </div>
                     <div class="row wow fadeInUp">
                         <div class="col-sm-4">
                             <img src="/static/images/首页_17.png" alt="Responsive across devices" class="">
@@ -134,15 +129,12 @@
                 <div class="container">
                     <div class="row wow fadeInUp">
                         <div class="col-sm-6">
-                            <img src="/static/images/customer/01.png" alt="Responsive across devices" class="">
+                            <img src="/static/images/customer/01.png" alt="" class="img-responsive">
                         </div>
                         <div class="col-sm-6">
-                            <fieldset style="margin-top: 30px;">
-                                <legend>
-                                    <h2>部署方式</h2>
-                                    <span class="lead">CLIENT</span>
-                                </legend>
-                            </fieldset>
+                            <div class="row-title wow fadeInUp">
+                                    <h2>主要客户<span>CLIENT</span></h2>
+                            </div>
                             <div class="row">
                                 <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/aigo.jpg" alt="" class=""></div>
                                 <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/shopEx.jpg" alt="" class=""></div>
@@ -219,13 +211,12 @@ section {
     box-shadow: none;
 }
 .panel-heading .panel-title {
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 5px;
 }
 .panel-heading small {
     color: #3099E3;
     font-size: 20px;
-    font-weight: 600;
 }
 .panel-body {
     padding: 0 15px;
@@ -258,15 +249,15 @@ fieldset .lead {
 }
 .product h4,
 .deployment h4 {
-    font-size: 15px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .solution .col-sm-6 {
     height: 200px;
     line-height: 200px;
     text-align: center;
-    font-size: 18px;
+    font-size: 26px;
     color: #f8f8f8;
 }
 

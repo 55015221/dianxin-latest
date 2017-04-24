@@ -71,7 +71,7 @@ export default {
 <style>
 
 .footer {
-    font-size: 12px;
+    font-size: 14px;
     background: #e9e9e9;
 }
 .footer .container {
@@ -84,12 +84,12 @@ export default {
     color: #666;
 }
 .footer .site-link dt {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #333;
 }
 .footer .site-link dd {
-    margin: 5px 0;
-    font-size: 13px;
+    line-height: 1.6;
+    font-size: 14px;
 }
 .copyright {
     background: #444;
