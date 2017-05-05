@@ -70,8 +70,9 @@ export default {
 
 .content h2 {
     margin-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     color: #3099E3;
+    font-size: 42px;
     text-align: center;
 }
 .panel-group .panel+.panel {
@@ -79,5 +80,12 @@ export default {
 }
 .panel .panel-title span {
     color: #3099E3;
+}
+.panel .panel-body {
+    margin-left: 22px;
+
+}
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border-top: none;
 }
 </style>

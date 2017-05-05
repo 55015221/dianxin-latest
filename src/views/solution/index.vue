@@ -8,104 +8,39 @@
             <div class="container">
                 <div class="row">
                     <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#panel-1" role="tab" data-toggle="tab"
-                                                                  aria-controls="profile" aria-expanded="true">供应链业务</a></li>
-                        <li role="presentation" class=""><a href="#panel-2" role="tab" data-toggle="tab" aria-controls="profile"
-                                                            aria-expanded="false">销售业务</a></li>
-                        <li role="presentation" class=""><a href="#panel-3" role="tab" data-toggle="tab" aria-controls="profile"
-                                                            aria-expanded="false">费用报销</a></li>
-                        <li role="presentation" class=""><a href="#panel-4" role="tab" data-toggle="tab" aria-controls="profile"
-                                                            aria-expanded="false">工资核算</a></li>
+                        <template v-for="(items, index) in records">
+                            <li role="presentation" v-bind:class="index === 0?'active':''">
+                                <a v-bind:href="'#panel-'+index" role="tab" data-toggle="tab" aria-controls="profile" aria-expanded="true">{{ items.title }}</a>
+                            </li>
+                        </template>
                     </ul>
                     <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane fade active in" id="panel-1" aria-labelledby="profile-tab">
-                            <div class="col-sm-4">
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">供应链循环业务一体化</h3>
-                                        <small></small>
-                                    </div>
-                                    <div class="panel-body">
-                                        <ul>
-                                            <li>实现供应链业务在线处理</li>
-                                            <li>实现与供应商的在线协同</li>
-                                            <li>全面掌控供应链实时情况</li>
-                                            <li>提升供应商效率，消除对账</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <img class="img-responsive center-block" data-src="/static/images/placeholder_400x250.svg"
-                                     alt="" src="/static/images/solution/01.png" data-holder-rendered="true">
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="panel-2" aria-labelledby="profile-tab">
-                            <div class="col-sm-4">
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">供应链循环业务一体化</h3>
-                                        <small></small>
-                                    </div>
-                                    <div class="panel-body">
-                                        <ul>
-                                            <li>实现供应链业务在线处理</li>
-                                            <li>实现与供应商的在线协同</li>
-                                            <li>全面掌控供应链实时情况</li>
-                                            <li>提升供应商效率，消除对账</li>
-                                        </ul>
+                        <template v-for="(items, index) in records">
+                            <div role="tabpanel" class="tab-pane fade active in" v-bind:id="'panel-'+ index" aria-labelledby="profile-tab">
+                                <div class="col-sm-6">
+                                    <div class="panel">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">{{ items.content.subheading }}</h3>
+                                            <small></small>
+                                        </div>
+                                        <div class="panel-body">
+                                            <template v-if="items.content.body instanceof Array">
+                                                <ul>
+                                                    <li v-for="(val, idx) in items.content.body">{{ val}}</li>
+                                                </ul>
+                                            </template>
+                                            <template v-else>
+                                                {{ items.content.body }}
+                                            </template>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <img class="img-responsive center-block" data-src="/static/images/placeholder_400x250.svg"
-                                     alt="" src="/static/images/solution/02.png" data-holder-rendered="true">
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="panel-3" aria-labelledby="profile-tab">
-                            <div class="col-sm-4">
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">供应链循环业务一体化</h3>
-                                        <small></small>
-                                    </div>
-                                    <div class="panel-body">
-                                        <ul>
-                                            <li>实现供应链业务在线处理</li>
-                                            <li>实现与供应商的在线协同</li>
-                                            <li>全面掌控供应链实时情况</li>
-                                            <li>提升供应商效率，消除对账</li>
-                                        </ul>
-                                    </div>
+                                <div class="col-sm-6">
+                                    <img class="img-responsive center-block" data-src="/static/images/placeholder_400x250.svg"
+                                         alt="" v-bind:src="items.imageUrl" data-holder-rendered="true">
                                 </div>
                             </div>
-                            <div class="col-sm-8">
-                                <img class="img-responsive center-block" data-src="/static/images/placeholder_400x250.svg"
-                                     alt="" src="/static/images/solution/03.png" data-holder-rendered="true">
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="panel-4" aria-labelledby="profile-tab">
-                            <div class="col-sm-4">
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">供应链循环业务一体化</h3>
-                                        <small></small>
-                                    </div>
-                                    <div class="panel-body">
-                                        <ul>
-                                            <li>实现供应链业务在线处理</li>
-                                            <li>实现与供应商的在线协同</li>
-                                            <li>全面掌控供应链实时情况</li>
-                                            <li>提升供应商效率，消除对账</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <img class="img-responsive center-block" data-src="/static/images/placeholder_400x250.svg"
-                                     alt="" src="/static/images/solution/04.png" data-holder-rendered="true">
-                            </div>
-                        </div>
+                        </template>
                     </div>
                 </div>
             </div>
@@ -135,7 +70,7 @@ export default {
     },
     created () {
         console.log("created solution")
-        this.$store.dispatch('getProduct',{ "method": "getProduct" }).then((res) => {
+        this.$store.dispatch('getSolution',{ "method": "getSolution" }).then((res) => {
             console.log(res)
         })
     },

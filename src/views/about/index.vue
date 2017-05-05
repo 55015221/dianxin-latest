@@ -7,12 +7,12 @@
         <section class="introduce">
             <div class="container">
                 <h2><span>典信</span>简介</h2>
-                <div class="panel" v-for="(item, index) in records.content">
+                <div class="panel" v-for="(item, index) in records.introduce">
                     <div class="panel-heading">
-                        <h3 class="panel-title">公司成立</h3>
+                        <h3 class="panel-title"><small style="color:#444;">{{ item.title }}</small></h3>
                     </div>
                     <div class="panel-body">
-                        {{ item }}
+                        {{ item.content }}
                     </div>
                 </div>
             </div>
@@ -29,12 +29,12 @@
                                 <small>企业荣誉</small>
                             </div>
                             <div class="panel-body">
-                                {{ records.content[0] }}
+                                {{ records.honours.content }}
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <img class="img-responsive" src="/static/images/关于我们_03.png"/>
+                        <img class="img-responsive" v-bind:src="records.honours.imageUrl"/>
                     </div>
                 </div>
             </div>

@@ -99,7 +99,7 @@ export default {
         },
         addMapOverlay:function(){
             let markers = [
-                    {content:"地址：深圳市龙龙岗区大运软件小镇54栋306",title:"深圳市典信科技有限公司",imageOffset: {width:0,height:3},position:{lat:22.691726,lng:114.235883}}
+                    {content:"地址：深圳市龙岗区大运软件小镇27栋207",title:"深圳市典信科技有限公司",imageOffset: {width:0,height:3},position:{lat:22.691726,lng:114.235883}}
                 ];
             for(let index = 0; index < markers.length; index++ ){
                 let point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);

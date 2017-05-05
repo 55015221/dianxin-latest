@@ -28,8 +28,8 @@
                     <dd><a href="/solution">工资业务</a></dd>
                 </dl>
                 <dl class="col-sm-3 col-sm-offset-1 site-link" id="license">
-                    <dd><span class="glyphicon glyphicon-phone-alt"></span> 4007751007</dd>
-                    <dd><span class="glyphicon glyphicon-map-marker"></span> 深圳市龙岗区大运软件小镇54栋306</dd>
+                    <dd><span class="glyphicon glyphicon-phone-alt"></span> 0755-29964020</dd>
+                    <dd><span class="glyphicon glyphicon-map-marker"></span> 深圳市龙岗区大运软件小镇27栋207</dd>
                     <dd><img width="100" height="100" src="/static/images/qrcode.png"/></dd>
                 </dl>
             </div>

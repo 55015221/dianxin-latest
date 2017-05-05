@@ -85,7 +85,7 @@ export default {
     margin-top: 20px;
 }
 .header .navbar-nav > li{
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .header .navbar-nav > li > a {

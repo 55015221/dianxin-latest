@@ -147,6 +147,24 @@ const actions = {
         });
     },
     /**
+     * 获取关于我们数据
+     */
+    getSolution({ commit }, payload){
+        commit(types.GET_CONTACT_PENDING)
+        //开始ajax请求
+        Vue.http.get('/static/mock/data.json?method=' + payload.method, payload).then((response) => {
+            // 响应成功回调
+            if (response.status === 200 && response.body.code === 1000) {
+            commit(types.GET_CONTACT_SUCCESS, response.body.data.solution)
+        } else {
+            commit(types.GET_CONTACT_FAILURE)
+        }
+    }, (response) => {
+            // 响应错误回调
+            console.log("http error", response)
+        });
+    },
+    /**
      * 获取幻灯片数据
      */
     getSlider({ commit }, payload){
