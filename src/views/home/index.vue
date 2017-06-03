@@ -40,13 +40,13 @@
                     </div>
                     <div class="row wow fadeInUp">
                         <template v-for="(item ,index) in records.service">
-                            <div :class="(index == 0) ? 'col-sm-2 col-sm-offset-1': 'col-sm-2'" 
+                            <a href="/product" v-link="{path: '/product'}" :class="(index == 0) ? 'col-sm-2 col-sm-offset-1': 'col-sm-2'" 
                             v-on:mouseenter="onEnter(item.hoverUrl)" 
                             v-on:mouseleave="onLeave(item.imageUrl)">
                                 <img :src="item.imageUrl" :data-hover="item.hoverUrl" alt="" class="">
                                 <h4>{{ item.title }}</h4>
                                 <p>{{ item.content }}</p>
-                            </div>
+                            </a>
                         </template>    
                     </div>
                 </div>
@@ -59,22 +59,22 @@
                         <h2>解决方案<span>SOULUTION</span></h2>
                     </div>
                     <div class="row wow fadeInUp">
-                        <div class="col-sm-6">
+                        <a href="/solution" v-link="{path: '/solution'}" class="col-sm-6">
                             <span class="glyphicon glyphicon-link"></span>
                             供应链循环业务一体化
-                        </div>
-                        <div class="col-sm-6">
+                        </a>
+                        <a href="/solution" v-link="{path: '/solution'}" class="col-sm-6">
                             <span class="glyphicon glyphicon-paperclip"></span>
                             销售业务一体化
-                        </div>
-                        <div class="col-sm-6">
+                        </a>
+                        <a href="/solution" v-link="{path: '/solution'}" class="col-sm-6">
                             <span class="glyphicon glyphicon-erase"></span>
                             费用报销与额度控制
-                        </div>
-                        <div class="col-sm-6">
+                        </a>
+                        <a href="/solution" v-link="{path: '/solution'}" class="col-sm-6">
                             <span class="glyphicon glyphicon-transfer"></span>
                             工资核算与发放
-                        </div>
+                        </a>
                     </div>
                 </div>
             </section>

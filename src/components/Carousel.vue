@@ -27,8 +27,8 @@ export default {
         return {
             banner: [
                 { "imageUrl": "/static/images/banner_01.png", "title": "", linkUrl: "" },
-                { "imageUrl": "/static/images/banner_02.png", "title": "", linkUrl: "" },
-                { "imageUrl": "/static/images/banner_03.png", "title": "", linkUrl: "" },
+                { "imageUrl": "/static/images/banner_02.jpg", "title": "", linkUrl: "" },
+                { "imageUrl": "/static/images/banner_03.jpg", "title": "", linkUrl: "" },
             ]
         }
     },
