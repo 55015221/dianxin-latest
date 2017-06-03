@@ -16,7 +16,8 @@
                     </ul>
                     <div class="tab-content">
                         <template v-for="(items, index) in records">
-                            <div role="tabpanel" class="tab-pane fade active in" v-bind:id="'panel-'+ index" aria-labelledby="profile-tab">
+                            <div role="tabpanel" v-bind:class="(index === 0) ? 'tab-pane fade active in' : 'tab-pane fade'" 
+                            v-bind:id="'panel-'+ index" aria-labelledby="profile-tab">
                                 <div class="col-sm-6">
                                     <div class="panel">
                                         <div class="panel-heading">

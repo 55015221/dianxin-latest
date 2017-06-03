@@ -41,8 +41,8 @@
                     <div class="row wow fadeInUp">
                         <template v-for="(item ,index) in records.service">
                             <div :class="(index == 0) ? 'col-sm-2 col-sm-offset-1': 'col-sm-2'" 
-                            v-on:mouseenter="onEnter(item.imageUrl)" 
-                            v-on:mouseleave="onLeave(item.hoverUrl)">
+                            v-on:mouseenter="onEnter(item.hoverUrl)" 
+                            v-on:mouseleave="onLeave(item.imageUrl)">
                                 <img :src="item.imageUrl" :data-hover="item.hoverUrl" alt="" class="">
                                 <h4>{{ item.title }}</h4>
                                 <p>{{ item.content }}</p>
@@ -159,25 +159,17 @@ export default {
     },
     mounted () {
         console.log("mounted home")
-        //$(".product .col-sm-2").hover(function(){
-        //    let hover = $(this).find("img").data("hover")
-        //    $(this).find("img").attr("src", hover).css({"transform": "rotate3d(0,1,0,360deg)"})
-        //},function(){
-        //    let src = $(this).find("img").data("src")
-         //   $(this).find("img").attr("src", src).css({"transform": "rotate3d(0,1,0,180deg)"})
-        //})
-        //:src="item.imageUrl" :data-hover="item.hoverUrl"
     },
     methods:{
         onEnter: function(url){
-            console.log(event)
-            console.log(url)
-
             let img = event.target.getElementsByTagName("img");
-            console.log()
+            img[0].setAttribute('src',url)
+            img[0].style.transform = "rotate3d(0,1,0,180deg)"
         },
-        onLeave: function(e){
-
+        onLeave: function(url){
+            let img = event.target.getElementsByTagName("img");
+            img[0].setAttribute('src',url)
+            img[0].style.transform = "rotate3d(0,1,0,360deg)"
         }
     }
 }
