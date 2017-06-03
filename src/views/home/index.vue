@@ -8,7 +8,7 @@
             <!--INTRODUCE-->
             <section class="introduce">
                 <div class="container">
-                    <template v-for="(item ,index) in records">
+                    <template v-for="(item ,index) in records.product">
                         <div class="row items">
                             <div :class="(index%2 === 1)?'col-sm-7 wow slideInLeft':'col-sm-7 col-sm-push-5 wow slideInRight'">
                                 <div class="panel">
@@ -39,37 +39,15 @@
                         <h2>产品与服务<span>PRODUCT AND SERVICE</span></h2>
                     </div>
                     <div class="row wow fadeInUp">
-                        <div class="col-sm-2 col-sm-offset-1">
-                            <img src="/static/images/home/01.png" data-src="/static/images/home/01.png"
-                                 data-hover="/static/images/home/0101.png" alt="在线往来平台" class="">
-                            <h4>在线往来平台</h4>
-                            <p>你的网站和应用能在同一份代码快速、有效适</p>
-                        </div>
-                        <div class="col-sm-2">
-                            <img src="/static/images/home/02.png" data-src="/static/images/home/02.png"
-                                 data-hover="/static/images/home/0202.png" alt="业务登记与交换服务" class="">
-                            <h4>业务登记与交换服务</h4>
-                            <p>你的网站和应用能在同一份代码快速、有效适</p>
-                        </div>
-                        <div class="col-sm-2">
-                            <img src="/static/images/home/03.png" data-src="/static/images/home/03.png"
-                                 data-hover="/static/images/home/0303.png" alt="用户认证服务" class="">
-                            <h4>用户认证服务</h4>
-                            <p>你的网站和应用能在同一份代码快速、有效适</p>
-                        </div>
-                        <div class="col-sm-2">
-                            <img src="/static/images/home/04.png" data-src="/static/images/home/04.png"
-                                 data-hover="/static/images/home/0404.png" alt="往来账款管理咨询" class="">
-                            <h4>往来账款管理咨询</h4>
-                            <p>你的网站和应用能在同一份代码快速、有效适</p>
-                        </div>
-                        <div class="col-sm-2">
-                            <img src="/static/images/home/05.png" data-src="/static/images/home/05.png"
-                                 data-hover="/static/images/home/0505.png" alt="信用管理咨询" class="">
-                            <h4>信用管理咨询</h4>
-                            <p>你的网站和应用能在同一份代码快速、有效适</p>
-                        </div>
-
+                        <template v-for="(item ,index) in records.service">
+                            <div :class="(index == 0) ? 'col-sm-2 col-sm-offset-1': 'col-sm-2'" 
+                            v-on:mouseenter="onEnter(item.imageUrl)" 
+                            v-on:mouseleave="onLeave(item.hoverUrl)">
+                                <img :src="item.imageUrl" :data-hover="item.hoverUrl" alt="" class="">
+                                <h4>{{ item.title }}</h4>
+                                <p>{{ item.content }}</p>
+                            </div>
+                        </template>    
                     </div>
                 </div>
             </section>
@@ -181,15 +159,26 @@ export default {
     },
     mounted () {
         console.log("mounted home")
-        $(".product .col-sm-2").hover(function(){
-            let hover = $(this).find("img").data("hover")
-            $(this).find("img").attr("src", hover).css({"transform": "rotate3d(0,1,0,360deg)"})
-        },function(){
-            let src = $(this).find("img").data("src")
-            $(this).find("img").attr("src", src).css({"transform": "rotate3d(0,1,0,180deg)"})
-        })
+        //$(".product .col-sm-2").hover(function(){
+        //    let hover = $(this).find("img").data("hover")
+        //    $(this).find("img").attr("src", hover).css({"transform": "rotate3d(0,1,0,360deg)"})
+        //},function(){
+        //    let src = $(this).find("img").data("src")
+         //   $(this).find("img").attr("src", src).css({"transform": "rotate3d(0,1,0,180deg)"})
+        //})
+        //:src="item.imageUrl" :data-hover="item.hoverUrl"
     },
     methods:{
+        onEnter: function(url){
+            console.log(event)
+            console.log(url)
+
+            let img = event.target.getElementsByTagName("img");
+            console.log()
+        },
+        onLeave: function(e){
+
+        }
     }
 }
 </script>
@@ -197,6 +186,13 @@ export default {
 <style scoped>
 .wrapper-content {
 
+}
+.items {
+    padding: 20px 0;
+}
+
+.items .panel {
+    margin-top: 40px;
 }
 
 section {
