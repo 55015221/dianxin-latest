@@ -20,21 +20,15 @@
 
         <section class="honor">
             <div class="container">
-                <h2><span>典信</span>荣誉</h2>
+                <h2><span>理论发展</span>知识产权</h2>
                 <div class="row">
-                    <div class="col-sm-6">
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Successful <span>cases</span></h3>
-                                <small>企业荣誉</small>
-                            </div>
-                            <div class="panel-body">
-                                {{ records.honours.content }}
-                            </div>
-                        </div>
-                    </div>
+            
                     <div class="col-sm-6">
                         <img class="img-responsive" v-bind:src="records.honours.imageUrl"/>
+                    </div>
+
+                     <div class="col-sm-6">
+                        <img class="img-responsive" src="/static/images/about1.png"/>
                     </div>
                 </div>
             </div>

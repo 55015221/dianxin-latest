@@ -69,32 +69,32 @@
       "service": [
           {
             "title": "软件产品",
-            "imageUrl": "/static/images/home/01.png",
-            "hoverUrl": "/static/images/home/0101.png",
+            "imageUrl": "/static/images/home/05.png",
+            "hoverUrl": "/static/images/home/0505.png",
             "content": "提供给企业内部部署 企业自己独立管理运维"
           },
           {
             "title": "云平台服务",
-            "imageUrl": "/static/images/home/02.png",
-            "hoverUrl": "/static/images/home/0202.png",
+            "imageUrl": "/static/images/home/03.png",
+            "hoverUrl": "/static/images/home/0303.png",
             "content": "直接使用SAAS平台服务 使用简单方便"
           },
           {
             "title": "数据交换服务",
-            "imageUrl": "/static/images/home/03.png",
-            "hoverUrl": "/static/images/home/0303.png",
+            "imageUrl": "/static/images/home/04.png",
+            "hoverUrl": "/static/images/home/0404.png",
             "content": "与业务对方互联通互通 加密加签第三方认证"
           },
           {
             "title": "增值服务",
-            "imageUrl": "/static/images/home/04.png",
-            "hoverUrl": "/static/images/home/0404.png",
+            "imageUrl": "/static/images/home/01.png",
+            "hoverUrl": "/static/images/home/0101.png",
             "content": "构建基本交易环境 协助企业各类业务拓展"
           },
           {
             "title": "实施、咨询服务",
-            "imageUrl": "/static/images/home/05.png",
-            "hoverUrl": "/static/images/home/0505.png",
+            "imageUrl": "/static/images/home/02.png",
+            "hoverUrl": "/static/images/home/0202.png",
             "content": "提供系统构建服务 提升企业业务效率"
           }
       ]
@@ -251,7 +251,7 @@
       ],
       "honours": {
         "content": "通过多年深入分析研究供应链、销售与分销、往来账款、信用管理的实际情况，结合先进的技术手段，公司创造性地提出往来业务电子化的理论，并开发出典信商务互联系统B-BUS（Basicredit Business United System）。该系统面向各类企业，以供应链、销售与分销及往来账款业务为基础，通过信息化与数据交换技术，实现现代商业主体各自独立运营和处理的背景下的互联互通，能够快速、成熟、全面地解决现有相关业务与管理领域中存在的诸多问题，为企业带来重大价值。同时，公司将通过持续的技术和理论创新、积极实践，不断促进商务及信用及信息化发展，造福社会大众。典信公司在供应链管理、销售与分销、往来账款电子化、信用管理、供应链金融及商务信息交换方面有深入的研究，拥有行业内最顶尖的人才队伍。公司有信心、有能力帮助企业实现相关业务及管理的大幅提升，并让客户感受到我们的专业热心的服务，享受管理进步与技术进步带来的巨大利益。",
-        "imageUrl": "/static/images/关于我们_03.png"
+        "imageUrl": "/static/images/about.png"
       }
     },
     "contact": {

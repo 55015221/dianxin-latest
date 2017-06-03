@@ -14,15 +14,16 @@
                 </div>
                 <nav id="bs-navbar" class="navbar-collapse collapse" aria-expanded="true">
                     <ul class="nav navbar-nav navbar-right">
+                        <li><a class="btn btn-info" id="sass-login" href="">云平台</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
                         <template v-for="(item, index) in menuList">
                             <router-link :to="item.link" tag="li"><a href="">{{ item.label }}</a></router-link>
                         </template>
                     </ul>
-                    <!--
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="">管理后台</a></li>
-                    </ul>
-                    -->
+                    <!---->
+                    
+                    
                 </nav>
             </div>
         </div>
@@ -125,4 +126,13 @@ export default {
     background: none;
 }
 
+#sass-login {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    border-bottom: none;
+}
+#sass-login:hover {
+    border-bottom: 1px solid #269abc;
+}
 </style>

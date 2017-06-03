@@ -11,14 +11,9 @@
                     <dt>产品与服务</dt>
                     <dd><a href="/product">软件产品</a></dd>
                     <dd><a href="/product">云平台服务</a></dd>
-                    <dd><a href="/product">基础服务</a></dd>
+                    <dd><a href="/product">数据交换服务</a></dd>
                     <dd><a href="/product">增值服务</a></dd>
-                    <dd><a href="/product">咨询服务</a></dd>
-                </dl>
-                <dl class="col-sm-2 site-link">
-                    <dt>业务合作</dt>
-                    <dd><a href="/solution">市场推广合作</a></dd>
-                    <dd><a href="/solution">供应链金融合作</a></dd>
+                    <dd><a href="/product">实施、咨询服务</a></dd>
                 </dl>
                 <dl class="col-sm-2 site-link">
                     <dt>解决方案</dt>

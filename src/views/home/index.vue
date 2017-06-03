@@ -61,7 +61,7 @@
                     <div class="row wow fadeInUp">
                         <a href="/solution" v-link="{path: '/solution'}" class="col-sm-6">
                             <span class="glyphicon glyphicon-link"></span>
-                            供应链循环业务一体化
+                            供应链业务一体化
                         </a>
                         <a href="/solution" v-link="{path: '/solution'}" class="col-sm-6">
                             <span class="glyphicon glyphicon-paperclip"></span>
@@ -73,7 +73,7 @@
                         </a>
                         <a href="/solution" v-link="{path: '/solution'}" class="col-sm-6">
                             <span class="glyphicon glyphicon-transfer"></span>
-                            工资核算与发放
+                            业务机器人
                         </a>
                     </div>
                 </div>
@@ -107,20 +107,21 @@
                 <div class="container">
                     <div class="row wow fadeInUp">
                         <div class="col-sm-6">
-                            <img src="/static/images/customer/01.png" alt="" class="img-responsive">
+                            <img src="/static/images/customer/01.png" alt="">
                         </div>
                         <div class="col-sm-6">
                             <div class="row-title wow fadeInUp">
                                     <h2>主要客户<span>CLIENT</span></h2>
                             </div>
                             <div class="row">
-                                <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/aigo.jpg" alt="" class=""></div>
+                                <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/changfeng.jpg" alt="" class=""></div>
                                 <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/shopEx.jpg" alt="" class=""></div>
                                 <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/yijijing.jpg" alt="" class=""></div>
                                 <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/hezi.jpg" alt="" class=""></div>
                                 <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/qianxi.gif" alt="" class=""></div>
                                 <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/haixin.jpg" alt="" class=""></div>
                                 <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/bohe.jpg" alt="" class=""></div>
+                                <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/kelu.jpg" alt="" class="img-responsive"></div>
                             </div>
                         </div>
                     </div>
@@ -164,12 +165,12 @@ export default {
         onEnter: function(url){
             let img = event.target.getElementsByTagName("img");
             img[0].setAttribute('src',url)
-            img[0].style.transform = "rotate3d(0,1,0,180deg)"
+            img[0].style.transform = "rotate3d(0,1,0,360deg)"
         },
         onLeave: function(url){
             let img = event.target.getElementsByTagName("img");
             img[0].setAttribute('src',url)
-            img[0].style.transform = "rotate3d(0,1,0,360deg)"
+            img[0].style.transform = "rotate3d(0,1,0,0deg)"
         }
     }
 }
@@ -237,6 +238,7 @@ fieldset .lead {
 }
 .product h4,
 .deployment h4 {
+    margin-top: 30px;
     font-size: 18px;
     font-weight: 500;
 }
