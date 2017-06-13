@@ -40,14 +40,14 @@
                     </div>
                     <div class="row wow fadeInUp">
                         <template v-for="(item ,index) in records.service">
-                            <a href="/product" v-link="{path: '/product'}" :class="(index == 0) ? 'col-sm-2 col-sm-offset-1': 'col-sm-2'" 
-                            v-on:mouseenter="onEnter(item.hoverUrl)" 
+                            <a href="/product" v-link="{path: '/product'}" :class="(index == 0) ? 'col-sm-2 col-sm-offset-1': 'col-sm-2'"
+                            v-on:mouseenter="onEnter(item.hoverUrl)"
                             v-on:mouseleave="onLeave(item.imageUrl)">
                                 <img :src="item.imageUrl" :data-hover="item.hoverUrl" alt="" class="">
                                 <h4>{{ item.title }}</h4>
                                 <p>{{ item.content }}</p>
                             </a>
-                        </template>    
+                        </template>
                     </div>
                 </div>
             </section>
@@ -114,14 +114,14 @@
                                     <h2>主要客户<span>CLIENT</span></h2>
                             </div>
                             <div class="row">
-                                <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/changfeng.jpg" alt="" class=""></div>
-                                <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/shopEx.jpg" alt="" class=""></div>
-                                <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/yijijing.jpg" alt="" class=""></div>
-                                <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/hezi.jpg" alt="" class=""></div>
-                                <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/qianxi.gif" alt="" class=""></div>
-                                <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/haixin.jpg" alt="" class=""></div>
-                                <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/bohe.jpg" alt="" class=""></div>
-                                <div class="col-sm-3 col-sm-offset-1"><img height="60" src="/static/images/customer/kelu.jpg" alt="" class="img-responsive"></div>
+                                <div class="col-sm-3 col-sm-offset-1"><img src="/static/images/customer/changfeng.jpg" alt="" class="img-responsive"></div>
+                                <div class="col-sm-3 col-sm-offset-1"><img src="/static/images/customer/lingchuang.png" alt="" class="img-responsive"></div>
+                                <div class="col-sm-3 col-sm-offset-1"><img src="/static/images/customer/lizhi.jpg" alt="" class="img-responsive"></div>
+                                <div class="col-sm-3 col-sm-offset-1"><img src="/static/images/customer/shicheng.png" alt="" class="img-responsive"></div>
+                                <div class="col-sm-3 col-sm-offset-1"><img src="/static/images/customer/dagong.png" alt="" class="img-responsive"></div>
+                                <div class="col-sm-3 col-sm-offset-1"><img src="/static/images/customer/keguang.png" alt="" class="img-responsive"></div>
+                                <div class="col-sm-3 col-sm-offset-1"><img src="/static/images/customer/gp.png" alt="" class="img-responsive"></div>
+                                <div class="col-sm-3 col-sm-offset-1"><img src="/static/images/customer/kelu.png" alt="" class="img-responsive"></div>
                             </div>
                         </div>
                     </div>
