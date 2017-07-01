@@ -17,7 +17,7 @@
                                         <small>{{ item.lead }}</small>
                                     </div>
                                     <div class="panel-body">
-                                        <p>{{ item.content }}s</p>
+                                        <p>{{ item.content }}</p>
                                     </div>
                                 </div>
                             </div>
