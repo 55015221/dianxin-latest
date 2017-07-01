@@ -21,12 +21,12 @@
                     <dd><router-link to="/solution">销售、分销与应收</router-link></dd>
                     <dd><router-link to="/solution">报销业务</router-link></dd>
                     <dd><router-link to="/solution">工资业务</router-link></dd>
-                    <dd><router-link to="/solution">工资业务</router-link></dd>
+                    <dd><router-link to="/solution">业务机器人</router-link></dd>
                 </dl>
                 <dl class="col-sm-3 col-sm-offset-1 site-link" id="license">
                     <dd><span class="glyphicon glyphicon-phone-alt"></span> 0755-29964020</dd>
                     <dd><span class="glyphicon glyphicon-map-marker"></span> 深圳市龙岗区大运软件小镇27栋207</dd>
-                    <dd><img width="100" height="100" src="/static/images/qrcode.png"/></dd>
+                    <!--<dd><img width="100" height="100" src="/static/images/qrcode.png"/></dd>-->
                 </dl>
             </div>
         </div>
