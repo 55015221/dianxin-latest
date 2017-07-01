@@ -35,7 +35,7 @@ export default {
 
 <style scoped>
 .banner {
-    height: 360px;
+    max-height: 360px;
     background: #3099E3;
 }
 
