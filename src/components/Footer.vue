@@ -9,7 +9,7 @@
                 </dl>
                 <dl class="col-sm-2 site-link">
                     <dt>产品与服务</dt>
-                    <dd><router-link to="/product">联系我们</router-link></dd>
+                    <dd><router-link to="/product">软件产品</router-link></dd>
                     <dd><router-link to="/product">云平台服务</router-link></dd>
                     <dd><router-link to="/product">数据交换服务</router-link></dd>
                     <dd><router-link to="/product">增值服务</router-link></dd>
