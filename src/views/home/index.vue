@@ -43,7 +43,7 @@
                             <router-link to="/product" :class="(index == 0) ? 'col-sm-2 col-sm-offset-1': 'col-sm-2'"
                             v-on:mouseenter="onEnter(item.hoverUrl)"
                             v-on:mouseleave="onLeave(item.imageUrl)">
-                                <img :src="item.imageUrl" :data-hover="item.hoverUrl" alt="" class="">
+                                <img :src="item.imageUrl" :data-hover="item.hoverUrl" alt="" class="img-responsive center-block">
                                 <h4>{{ item.title }}</h4>
                                 <p>{{ item.content }}</p>
                             </router-link>
@@ -59,22 +59,22 @@
                         <h2>解决方案<span>SOULUTION</span></h2>
                     </div>
                     <div class="row wow fadeInUp">
-                        <a href="/solution" v-link="{path: '/solution'}" class="col-sm-6">
-                            <span class="glyphicon glyphicon-link"></span>
+                    <router-link to="/solution" class="col-sm-6">
+                        <span class="glyphicon glyphicon-link"></span>
                             供应链业务一体化
-                        </a>
-                        <a href="/solution" v-link="{path: '/solution'}" class="col-sm-6">
-                            <span class="glyphicon glyphicon-paperclip"></span>
+                    </router-link>
+                    <router-link to="/solution" class="col-sm-6">
+                        <span class="glyphicon glyphicon-paperclip"></span>
                             销售业务一体化
-                        </a>
-                        <a href="/solution" v-link="{path: '/solution'}" class="col-sm-6">
-                            <span class="glyphicon glyphicon-erase"></span>
+                    </router-link>
+                    <router-link to="/solution" class="col-sm-6">
+                        <span class="glyphicon glyphicon-erase"></span>
                             费用报销与额度控制
-                        </a>
-                        <a href="/solution" v-link="{path: '/solution'}" class="col-sm-6">
-                            <span class="glyphicon glyphicon-transfer"></span>
+                    </router-link>
+                    <router-link to="/solution" class="col-sm-6">
+                        <span class="glyphicon glyphicon-transfer"></span>
                             业务机器人
-                        </a>
+                    </router-link>
                     </div>
                 </div>
             </section>
@@ -87,15 +87,15 @@
                     </div>
                     <div class="row wow fadeInUp">
                         <div class="col-sm-4">
-                            <img src="/static/images/首页_17.png" alt="Responsive across devices" class="">
+                            <img src="/static/images/首页_17.png" alt="" class="">
                             <h4>企业内部部署</h4>
                         </div>
                         <div class="col-sm-4">
-                            <img src="/static/images/首页_19.png" alt="Responsive across devices" class="">
+                            <img src="/static/images/首页_19.png" alt="" class="">
                             <h4>服务器托管</h4>
                         </div>
                         <div class="col-sm-4">
-                            <img src="/static/images/首页_21.png" alt="Responsive across devices" class="">
+                            <img src="/static/images/首页_21.png" alt="" class="">
                             <h4>SAAS云模式</h4>
                         </div>
                     </div>
@@ -249,6 +249,7 @@ fieldset .lead {
     text-align: center;
     font-size: 26px;
     color: #f8f8f8;
+    display: block;
 }
 
 .solution .col-sm-6:nth-child(4n+1){background-color:#3099E3;border:10px solid #fff;}
