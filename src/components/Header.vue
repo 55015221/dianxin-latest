@@ -10,11 +10,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="/" title="深圳典信科技有限公司" class="navbar-brand"><img class="" alt="深圳典信科技有限公司" src="/static/images/logo.jpg"/></a>
+                    <router-link to="/" class="navbar-brand" title="深圳典信科技有限公司">
+                        <img class="" alt="深圳典信科技有限公司" src="/static/images/logo.jpg"/>
+                    </router-link>
                 </div>
                 <nav id="bs-navbar" class="navbar-collapse collapse" aria-expanded="true">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a class="btn btn-info" id="sass-login" href="">云平台</a></li>
+                        <li><a target="_blank" href="https://www.basicredit.com/bct" class="btn btn-info" id="sass-login">云平台</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <template v-for="(item, index) in menuList">

@@ -3,7 +3,7 @@
 <template>
     <!--jumbotron-->
     <div class="banner">
-        <img class="img-responsive" src="/static/images/banner400.jpg" alt="">
+        <img class="" src="/static/images/banner400.jpg" alt="">
     </div>
 </template>
 
@@ -35,6 +35,7 @@ export default {
 
 <style scoped>
 .banner {
+    height: 400px;
     background: #3099E3;
 }
 

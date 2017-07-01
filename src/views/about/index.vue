@@ -12,7 +12,7 @@
                         <h3 class="panel-title"><small style="color:#444;">{{ item.title }}</small></h3>
                     </div>
                     <div class="panel-body">
-                        {{ item.content }}
+                        <p>{{ item.content }}</p>
                     </div>
                 </div>
             </div>
@@ -105,6 +105,9 @@ section {
 }
 .panel-body {
     padding: 0 15px;
+}
+.panel-body p{
+    text-indent:30px;  
 }
 
 </style>

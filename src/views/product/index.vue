@@ -14,7 +14,7 @@
                                 <small>{{ item.lead }}</small>
                             </div>
                             <div class="panel-body">
-                                {{ item.content }}
+                                <p>{{ item.content }}</p>
                             </div>
                         </div>
                     </div>
@@ -83,5 +83,8 @@ export default {
 }
 .panel-body {
     padding: 0 15px;
+}
+.panel-body p{
+    text-indent:30px;  
 }
 </style>

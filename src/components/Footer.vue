@@ -4,23 +4,24 @@
             <div class="row">
                 <dl class="col-sm-2 site-link">
                     <dt>关于</dt>
-                    <dd><a href="/about">关于我们</a></dd>
-                    <dd><a href="/contact">联系我们</a></dd>
+                    <dd><router-link to="/about">关于我们</router-link></dd>
+                    <dd><router-link to="/contact">联系我们</router-link></dd>
                 </dl>
                 <dl class="col-sm-2 site-link">
                     <dt>产品与服务</dt>
-                    <dd><a href="/product">软件产品</a></dd>
-                    <dd><a href="/product">云平台服务</a></dd>
-                    <dd><a href="/product">数据交换服务</a></dd>
-                    <dd><a href="/product">增值服务</a></dd>
-                    <dd><a href="/product">实施、咨询服务</a></dd>
+                    <dd><router-link to="/product">联系我们</router-link></dd>
+                    <dd><router-link to="/product">云平台服务</router-link></dd>
+                    <dd><router-link to="/product">数据交换服务</router-link></dd>
+                    <dd><router-link to="/product">增值服务</router-link></dd>
+                    <dd><router-link to="/product">实施、咨询服务</router-link></dd>
                 </dl>
                 <dl class="col-sm-2 site-link">
                     <dt>解决方案</dt>
-                    <dd><a href="/solution">供应链与应付</a></dd>
-                    <dd><a href="/solution">销售、分销与应收</a></dd>
-                    <dd><a href="/solution">报销业务</a></dd>
-                    <dd><a href="/solution">工资业务</a></dd>
+                    <dd><router-link to="/solution">供应链与应付</router-link></dd>
+                    <dd><router-link to="/solution">销售、分销与应收</router-link></dd>
+                    <dd><router-link to="/solution">报销业务</router-link></dd>
+                    <dd><router-link to="/solution">工资业务</router-link></dd>
+                    <dd><router-link to="/solution">工资业务</router-link></dd>
                 </dl>
                 <dl class="col-sm-3 col-sm-offset-1 site-link" id="license">
                     <dd><span class="glyphicon glyphicon-phone-alt"></span> 0755-29964020</dd>
@@ -32,7 +33,7 @@
         <div class="copyright">
             <div class="container">
                 Copyright © 2017 典信科技有限公司. All Rights Reserved &nbsp;<br />
-                <a href="http://www.miibeian.gov.cn/" rel="nofollow">粤ICP备 15005796号-3</a> &nbsp;
+                <a href="http://www.miibeian.gov.cn/" rel="nofollow">粤ICP备11086626号</a> &nbsp;
             </div>
         </div>
     </footer>

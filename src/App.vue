@@ -6,7 +6,7 @@
 
         <!--wrapper 主体-->
         <main class="wrapper">
-            <transition name="router-fade" mode="out-in">
+            <transition name="" mode="out-in">
               <router-view></router-view>
             </transition>
         </main>

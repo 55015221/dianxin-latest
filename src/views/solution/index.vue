@@ -31,7 +31,7 @@
                                                 </ul>
                                             </template>
                                             <template v-else>
-                                                {{ items.content.body }}
+                                                <p>{{ items.content.body }}</p>
                                             </template>
                                         </div>
                                     </div>
@@ -101,10 +101,16 @@ section {
     font-size: 20px;
     font-weight: 600;
 }
+.tab-pane .col-sm-6 {
+    padding: 20px;
+}
 .panel .panel-body li {
     line-height: 1.8;
 }
 .nav-tabs li.active a {
     color: #3099E3;
+}
+.panel-body p{
+    text-indent:30px;  
 }
 </style>

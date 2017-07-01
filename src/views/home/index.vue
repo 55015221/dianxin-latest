@@ -17,7 +17,7 @@
                                         <small>{{ item.lead }}</small>
                                     </div>
                                     <div class="panel-body">
-                                        {{ item.content }}
+                                        <p>{{ item.content }}s</p>
                                     </div>
                                 </div>
                             </div>
@@ -40,13 +40,13 @@
                     </div>
                     <div class="row wow fadeInUp">
                         <template v-for="(item ,index) in records.service">
-                            <a href="/product" v-link="{path: '/product'}" :class="(index == 0) ? 'col-sm-2 col-sm-offset-1': 'col-sm-2'"
+                            <router-link to="/product" :class="(index == 0) ? 'col-sm-2 col-sm-offset-1': 'col-sm-2'"
                             v-on:mouseenter="onEnter(item.hoverUrl)"
                             v-on:mouseleave="onLeave(item.imageUrl)">
                                 <img :src="item.imageUrl" :data-hover="item.hoverUrl" alt="" class="">
                                 <h4>{{ item.title }}</h4>
                                 <p>{{ item.content }}</p>
-                            </a>
+                            </router-link>
                         </template>
                     </div>
                 </div>
@@ -301,5 +301,9 @@ fieldset .lead {
     margin-bottom: 5px;
     overflow: hidden;
 }
+.introduce .panel-body p{
+    text-indent:30px;  
+}
+
 
 </style>
